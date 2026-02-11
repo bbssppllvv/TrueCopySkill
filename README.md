@@ -1,72 +1,67 @@
 # sayless
 
-A Claude Code skill that makes AI copy sound like a person wrote it.
+You ask AI to write a button label. It says "Submit."
+You ask for a headline. It gives you "Innovative AI-Powered Platform."
+You ask for an error message. You get "Something went wrong."
+
+That copy could live on 1,000 products unchanged. It's dead.
+
+sayless is a Claude Code skill that fixes this.
 
 ---
 
-## Before / After
+**You:** "Write onboarding copy for a transcription app."
 
-**Button label**
+**Without sayless:**
+> Start your journey with our powerful transcription platform. We leverage cutting-edge AI to deliver seamless results.
 
-| Before | After |
-|--------|-------|
-| Submit | Save changes |
-| OK | Start free trial |
-| Confirm | Invite teammates |
+**With sayless:**
+> Record a meeting. Get a summary before your next one.
+> English and Spanish. Up to 60 minutes. Works offline.
 
-**Error message**
-
-| Before | After |
-|--------|-------|
-| Something went wrong | You're offline. Reconnect to save changes. |
-
-**Empty state**
-
-| Before | After |
-|--------|-------|
-| No data | Projects will appear here. Create your first one to get started. |
-
-**Landing page headline**
-
-| Before | After |
-|--------|-------|
-| Innovative AI-Powered Platform for Teams | Turn meeting notes into decisions. |
-| Next-Generation Seamless Solution | See where users drop off in checkout. |
+One has adjectives. The other has facts.
 
 ---
 
-## What it covers
+**You:** "Error message for failed save."
 
-- **UI microcopy** — buttons, errors, empty states, tooltips, form labels, notifications
-- **Product flows** — onboarding, upgrade, settings, permissions
-- **Marketing pages** — hero sections, feature blocks, CTAs, pricing
-- **Landing pages** — headlines, subheadlines, proof sections
-- **Emails** — subject lines, body copy, CTAs
-- **Copy review** — flag dead words, fix tone mismatches, cut filler
+Without: *Something went wrong. Please try again.*
+
+With: *You're offline. Reconnect to save changes.*
+
+Three differences: what happened, why, what to do. No mystery.
 
 ---
 
-## How it works
+**You:** "Landing page headline for a design reference tool."
 
-The skill follows one rule: **Clarity > Respect > Character.** Always in this order.
+Without: *The Ultimate Design Research Platform for Modern Teams*
 
-Every line gets checked against a 7-point filter:
+With: *Stop debating. Start seeing.*
+*Search 100k real screens. Ship with fewer arguments.*
 
-1. Understandable in 3 seconds?
-2. "Why should I care?" answered?
-3. At least one concrete detail?
-4. Can cut 30% without losing meaning?
-5. Expectations honest?
-6. Next step obvious?
-7. Sounds human?
+One is a headline. The other is a point of view.
 
-Two or more "no" = rewrite.
+---
+
+## What changes
+
+sayless carries a 21-section copywriting methodology inside it. When triggered, every line gets filtered:
+
+- Can a stranger get this in 3 seconds?
+- Is there a concrete detail or is it all adjectives?
+- Can I cut 30% and lose nothing?
+- Does this sound like a person or a committee?
+
+It knows where personality belongs (onboarding, tooltips, success states) and where it doesn't (errors, payments, deletion, security).
+
+It has a banned words list. "Seamless" is on it. So is "leverage," "synergy," and "In today's fast-paced world."
 
 ---
 
 ## Install
 
-Download `sayless.skill` and add it to Claude Code:
+Download `sayless.skill` from this repo. Then in Claude Code:
 
 ```
 /install-skill sayless.skill
@@ -74,16 +69,24 @@ Download `sayless.skill` and add it to Claude Code:
 
 Or copy the `sayless/` folder into `~/.claude/skills/`.
 
+Works with any Claude Code project. Triggers on copy-related requests automatically.
+
 ---
 
-## The philosophy
+## Structure
 
-Most AI copy fails because it starts with character and skips clarity.
+```
+sayless/
+  SKILL.md                         — workflow and quick patterns
+  references/copywriting-guide.md  — full 21-section methodology
+```
 
-Sayless starts with clarity. Always.
+SKILL.md loads first. The guide loads when depth is needed. Context-efficient by design.
 
-If a word can live on 1,000 websites unchanged, it's dead.
-If a claim has no proof, it's hype.
-If a sentence has no verb, it's decoration.
+---
 
-Say less. Mean more.
+Clarity earns trust.
+Character earns memory.
+Honesty earns respect.
+
+If your copy can't do all three — say less.
