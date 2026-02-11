@@ -1,0 +1,27 @@
+{
+  "name": "sayless",
+  "version": "1.0.0",
+  "description": "Claude Code skill that makes AI copy sound human. Say less, mean more.",
+  "bin": {
+    "sayless": "./bin/install.js"
+  },
+  "files": [
+    "bin/",
+    "skill/"
+  ],
+  "keywords": [
+    "claude",
+    "claude-code",
+    "skill",
+    "copywriting",
+    "ux-copy",
+    "microcopy",
+    "ai-writing"
+  ],
+  "author": "bbssppllvv",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bbssppllvv/TrueCopySkill"
+  }
+}

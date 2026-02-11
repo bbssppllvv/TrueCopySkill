@@ -61,15 +61,13 @@ It has a banned words list. "Seamless" is on it. So is "leverage," "synergy," an
 
 ## Install
 
-Download `sayless.skill` from this repo. Then in Claude Code:
-
 ```
-/install-skill sayless.skill
+npx sayless
 ```
 
-Or copy the `sayless/` folder into `~/.claude/skills/`.
+That's it. Copies the skill into `~/.claude/skills/sayless/`.
 
-Works with any Claude Code project. Triggers on copy-related requests automatically.
+Or manually: download `sayless.skill` from this repo and run `/install-skill sayless.skill` in Claude Code.
 
 ---
 
