@@ -1,9 +1,9 @@
 ---
-name: ux-copy
-description: Write human, effective copy for products, websites, apps, and interfaces. Use when writing or reviewing any text that users see — UI microcopy (buttons, errors, empty states, tooltips, form labels, notifications), product flows (onboarding, upgrade, settings), marketing pages (hero sections, feature blocks, CTAs, pricing), landing pages, emails, or any user-facing text. Also use when reviewing existing copy for clarity, tone, or effectiveness. Triggers on requests like "write copy for", "what should this button say", "review this text", "make this sound more human", "write a headline", "help with onboarding copy", "write error messages", "landing page copy".
+name: sayless
+description: Write human, effective copy for products, websites, apps, and interfaces. Say less, mean more. Use when writing or reviewing any text that users see — UI microcopy (buttons, errors, empty states, tooltips, form labels, notifications), product flows (onboarding, upgrade, settings), marketing pages (hero sections, feature blocks, CTAs, pricing), landing pages, emails, or any user-facing text. Also use when reviewing existing copy for clarity, tone, or effectiveness. Triggers on requests like "write copy for", "what should this button say", "review this text", "make this sound more human", "write a headline", "help with onboarding copy", "write error messages", "landing page copy".
 ---
 
-# UX Copy
+# sayless
 
 Write copy people read, trust, remember, and act on.
 
